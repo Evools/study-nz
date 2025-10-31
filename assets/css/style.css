@@ -442,13 +442,18 @@ body {
   margin-bottom: 36px;
 }
 .contact__form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
-.form-row {
-  display: flex;
-  gap: 15px;
+.contact__form > *:nth-child(3),
+.contact__form > *:nth-child(4) {
+  grid-column: span 1;
+}
+.contact__form > *:nth-child(5),
+.contact__form > *:nth-child(6),
+.contact__form > *:nth-child(7) {
+  grid-column: 1 / -1;
 }
 .form-input {
   background: white;
@@ -457,21 +462,26 @@ body {
   font-size: 16px;
   letter-spacing: 0.32px;
   color: var(--fg);
-  flex: 1;
   outline: none;
+  width: 100%;
 }
 .form-input::placeholder {
   color: var(--fg);
 }
-.form-select {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+select.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../img/icons/chevrone.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 14px 14px;
+  padding-right: 45px;
   cursor: pointer;
 }
-.form-select img {
-  width: 14px;
-  height: 14px;
+select.form-select option {
+  background: white;
+  color: var(--fg);
 }
 .form-textarea {
   min-height: 200px;
@@ -498,6 +508,9 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .header-top {
+    padding: 16px;
+  }
   .burger-menu {
     display: flex;
   }
@@ -513,7 +526,7 @@ body {
     overflow: hidden;
     background: white;
     transition: max-height 0.3s ease;
-    border-bottom: 1px solid var(--border);
+    /* border-bottom: 1px solid var(--border); */
     padding: 0;
   }
   .nav.active {
@@ -620,7 +633,11 @@ body {
   .contact__form-wrapper {
     padding: 30px 20px;
   }
-  .form-row {
-    flex-direction: column;
+  .contact__form {
+    grid-template-columns: 1fr;
+  }
+  .contact__form > *:nth-child(3),
+  .contact__form > *:nth-child(4) {
+    grid-column: 1;
   }
 }

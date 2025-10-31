@@ -31,13 +31,16 @@ img {
   height: auto;
 }
 button,
-input {
+input,
+select,
+textarea {
   font: inherit;
   border: none;
   background: none;
   color: inherit;
 }
-button {
+button,
+select {
   cursor: pointer;
 }
 a {
