@@ -24,3 +24,28 @@ if (dropdownNavItem) {
   }
 }
 
+// Testimonials slider
+const testimonialsGrid = document.querySelector('.testimonials__grid');
+const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
+
+if (testimonialsGrid && arrowLeft && arrowRight) {
+  const cardWidth = 492; // width of one card
+  const gap = 25; // gap between cards
+  const scrollAmount = cardWidth + gap;
+
+  arrowLeft.addEventListener('click', () => {
+    testimonialsGrid.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  arrowRight.addEventListener('click', () => {
+    testimonialsGrid.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+}
+
