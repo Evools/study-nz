@@ -468,6 +468,9 @@ body {
 .form-input::placeholder {
   color: var(--fg);
 }
+.form-input[type="tel"] {
+  grid-column: span 2;
+}
 select.form-select {
   -webkit-appearance: none;
   -moz-appearance: none;

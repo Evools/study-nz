@@ -73,11 +73,14 @@
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title">
-              Study in New Zealand — the future starts here
+              Study NZ is a New Zealand–based company fully dedicated to
+              promoting and developing the brand of New Zealand education around
+              the world.
             </h1>
             <p class="hero__subtitle">
-              Choose prestigious education, enjoy unique nature, and open career
-              opportunities worldwide.
+              We work with leading universities and colleges across New Zealand,
+              helping international students discover one of the safest, most
+              innovative, and welcoming study destinations in the world.
             </p>
             <a href="#" class="btn btn--primary btn--large">Select a program</a>
           </div>
@@ -90,8 +93,9 @@
           <div class="advantages__header">
             <h2 class="advantages__title">Why New Zealand?</h2>
             <p class="advantages__subtitle">
-              Modern education, safety, and unique nature make New Zealand the
-              ideal choice.
+              At Study NZ, we make the path to New Zealand simple, transparent,
+              and inspiring. Our mission is to promote New Zealand education
+              globally and help students achieve their dreams.
             </p>
           </div>
           <div class="advantages__grid">
@@ -99,37 +103,60 @@
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/education.svg" alt="Education" />
               </div>
-              <h3 class="advantage-card__title">World-class education</h3>
+              <h3 class="advantage-card__title">
+                Safe and peaceful environment
+              </h3>
               <p class="advantage-card__text">
-                Universities rank among the top in global rankings.
+                New Zealand is consistently ranked among the safest countries in
+                the world, offering a stable society and a friendly atmosphere
+                for living and studying.
               </p>
             </div>
             <div class="advantage-card">
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/safety.svg" alt="Safety" />
               </div>
-              <h3 class="advantage-card__title">A safe and friendly country</h3>
+              <h3 class="advantage-card__title">World-class education</h3>
               <p class="advantage-card__text">
-                One of the lowest crime rates in the world.
+                New Zealand universities are globally recognized for their
+                innovative teaching methods, practical learning, and strong
+                industry connections.
               </p>
             </div>
             <div class="advantage-card">
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/career.svg" alt="Career" />
               </div>
-              <h3 class="advantage-card__title">Career opportunities</h3>
+              <h3 class="advantage-card__title">
+                Career and migration opportunities
+              </h3>
               <p class="advantage-card__text">
-                Students can work while studying and after graduation.
+                The country needs skilled and educated people — international
+                graduates are encouraged to stay, gain work experience, and even
+                build long-term careers through open post-study work and
+                migration pathways.
               </p>
             </div>
             <div class="advantage-card">
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/nature.svg" alt="Nature" />
               </div>
-              <h3 class="advantage-card__title">Unforgettable nature</h3>
+              <h3 class="advantage-card__title">Open and friendly culture</h3>
               <p class="advantage-card__text">
-                Mountains, oceans, lakes, and clean air — perfect conditions for
-                living.
+                Kiwis are known for their kindness, inclusiveness, and respect
+                for diversity. Students feel genuinely welcomed and quickly
+                become part of the community.
+              </p>
+            </div>
+            <div class="advantage-card">
+              <div class="advantage-card__icon">
+                <img src="./assets/img/icons/nature.svg" alt="Nature" />
+              </div>
+              <h3 class="advantage-card__title">Quality of life</h3>
+              <p class="advantage-card__text">
+                Clean nature, fresh air, balanced lifestyle, and excellent
+                healthcare make New Zealand one of the best places in the world
+                to live, study, and grow.
               </p>
             </div>
           </div>
@@ -137,7 +164,7 @@
       </section>
 
       <!-- Testimonials Section -->
-      <section class="testimonials">
+      <!-- <section class="testimonials">
         <div class="container">
           <div class="testimonials__header">
             <h2 class="testimonials__title">Student testimonials</h2>
@@ -229,7 +256,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Contact Section -->
       <section class="contact">
@@ -245,7 +272,7 @@
             </div>
             <div class="contact__info-item">
               <img src="./assets/img/icons/message.svg" alt="Phone" />
-              <span>WhatsApp / Telegram</span>
+              <span>Phone: <a href="tel:+64220778808">+64 22 077 8808</a></span>
             </div>
             <div class="contact__info-item">
               <img src="./assets/img/icons/instagram.svg" alt="Instagram" />
@@ -262,20 +289,72 @@
               Submit your application, and our consultant will contact you
               within 24 hours.
             </p>
-            <form class="contact__form">
-              <input type="text" placeholder="Name" class="form-input" />
-              <input type="email" placeholder="Email" class="form-input" />
-              <input type="tel" placeholder="Phone" class="form-input" />
-              <select class="form-input form-select">
+            <form
+              class="contact__form"
+              id="contactForm"
+              action="/send.php"
+              method="POST"
+              novalidate
+            >
+              <input
+                type="text"
+                name="company"
+                tabindex="-1"
+                autocomplete="off"
+                style="display: none"
+              />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                class="form-input"
+                required
+                minlength="2"
+                maxlength="100"
+                autocomplete="name"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="form-input"
+                required
+                maxlength="150"
+                autocomplete="email"
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+                class="form-input"
+                pattern="^[+0-9 ()-]{7,20}$"
+                inputmode="tel"
+                autocomplete="tel"
+              />
+              <select
+                name="country"
+                id="country"
+                class="form-input form-select"
+              >
                 <option>Country</option>
               </select>
-              <select class="form-input form-select">
+              <select
+                name="program"
+                id="program"
+                class="form-input form-select"
+              >
                 <option>Interested program</option>
               </select>
               <textarea
+                id="message"
+                name="message"
                 placeholder="Message"
                 class="form-input form-textarea"
-                rows="5"
+                rows="10"
+                maxlength="2000"
               ></textarea>
               <button type="submit" class="btn btn--white btn--large">
                 Submit application
