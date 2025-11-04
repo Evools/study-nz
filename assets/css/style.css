@@ -380,6 +380,62 @@ body {
   letter-spacing: 0.32px;
 }
 
+/* Services Section */
+.services {
+  padding: 50px 0;
+  background: #f8fafc;
+}
+.services__header {
+  margin-bottom: 30px;
+}
+.services__title {
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.service-card {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.service-card__icon {
+  background: var(--primary);
+  padding: 15px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.service-card__icon img {
+  width: 24px;
+  height: 24px;
+}
+.service-card__text {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--fg);
+  margin: 0;
+}
+
 /* Contact Section */
 .contact {
   display: flex;
@@ -618,6 +674,18 @@ select.form-select option {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+
+  /* Services Mobile */
+  .services {
+    padding: 30px 0;
+  }
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .service-card {
+    padding: 20px;
   }
 
   /* Contact Mobile */

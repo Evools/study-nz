@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/translations.js"></script>
     <script src="./assets/js/app.js" defer></script>
   </head>
   <body>
@@ -22,44 +23,65 @@
               <span></span>
             </button>
             <div class="language">
-              <button class="btn btn--secondary">ru</button>
-              <button class="btn btn--primary active">en</button>
+              <button class="btn btn--secondary" data-lang="ru">ru</button>
+              <button class="btn btn--primary active" data-lang="en">en</button>
             </div>
           </div>
         </div>
         <nav class="nav container">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">About the Company</a>
+              <a href="#" class="nav__link" data-i18n="navAbout"
+                >About the Company</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"
+              <a href="#" class="nav__link" data-i18n="navPrograms"
                 >Training Programs
                 <img src="./assets/img/icons/chevrone.svg" alt="chevrone" />
               </a>
               <ul class="nav__drop-menu">
                 <li class="nav__subitem">
-                  <a href="#" class="nav__sublink">Language Courses</a>
+                  <a
+                    href="#"
+                    class="nav__sublink"
+                    data-i18n="navLanguageCourses"
+                    >Language Courses</a
+                  >
                 </li>
                 <li class="nav__subitem">
-                  <a href="#" class="nav__sublink">Colleges</a>
+                  <a href="#" class="nav__sublink" data-i18n="navColleges"
+                    >Colleges</a
+                  >
                 </li>
                 <li class="nav__subitem">
-                  <a href="#" class="nav__sublink">Universities</a>
+                  <a href="#" class="nav__sublink" data-i18n="navUniversities"
+                    >Universities</a
+                  >
                 </li>
                 <li class="nav__subitem">
-                  <a href="#" class="nav__sublink">High Schools</a>
+                  <a href="#" class="nav__sublink" data-i18n="navHighSchools"
+                    >High Schools</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Advantages</a>
+              <a href="#" class="nav__link" data-i18n="navAdvantages"
+                >Advantages</a
+              >
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Support</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">News</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contacts</a>
+              <a href="#" class="nav__link" data-i18n="navSupport">Support</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link" data-i18n="navNews">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link" data-i18n="navFAQ">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link" data-i18n="navContacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -72,16 +94,21 @@
         </div>
         <div class="container">
           <div class="hero__content">
-            <h1 class="hero__title">
+            <h1 class="hero__title" data-i18n="heroTitle">
               We are New Zealand specialist agency that helps students from all
               over the world to study in New Zealand.
             </h1>
-            <p class="hero__subtitle">
+            <p class="hero__subtitle" data-i18n="heroSubtitle">
               We work with leading universities and colleges across New Zealand,
               helping international students discover one of the safest, most
               innovative, and welcoming study destinations in the world.
             </p>
-            <a href="#" class="btn btn--primary btn--large">Select a program</a>
+            <a
+              href="#"
+              class="btn btn--primary btn--large"
+              data-i18n="heroButton"
+              >Select a program</a
+            >
           </div>
         </div>
       </section>
@@ -90,8 +117,10 @@
       <section class="advantages">
         <div class="container">
           <div class="advantages__header">
-            <h2 class="advantages__title">Why New Zealand?</h2>
-            <p class="advantages__subtitle">
+            <h2 class="advantages__title" data-i18n="advantagesTitle">
+              Why New Zealand?
+            </h2>
+            <p class="advantages__subtitle" data-i18n="advantagesSubtitle">
               At Study NZ, we make the path to New Zealand simple, transparent,
               and inspiring. Our mission is to promote New Zealand education
               globally and help students achieve their dreams.
@@ -102,10 +131,10 @@
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/education.svg" alt="Education" />
               </div>
-              <h3 class="advantage-card__title">
+              <h3 class="advantage-card__title" data-i18n="advantage1Title">
                 Safe and peaceful environment
               </h3>
-              <p class="advantage-card__text">
+              <p class="advantage-card__text" data-i18n="advantage1Text">
                 New Zealand is consistently ranked among the safest countries in
                 the world, offering a stable society and a friendly atmosphere
                 for living and studying.
@@ -115,8 +144,10 @@
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/safety.svg" alt="Safety" />
               </div>
-              <h3 class="advantage-card__title">World-class education</h3>
-              <p class="advantage-card__text">
+              <h3 class="advantage-card__title" data-i18n="advantage2Title">
+                World-class education
+              </h3>
+              <p class="advantage-card__text" data-i18n="advantage2Text">
                 New Zealand universities are globally recognized for their
                 innovative teaching methods, practical learning, and strong
                 industry connections.
@@ -126,10 +157,10 @@
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/career.svg" alt="Career" />
               </div>
-              <h3 class="advantage-card__title">
+              <h3 class="advantage-card__title" data-i18n="advantage3Title">
                 Career and migration opportunities
               </h3>
-              <p class="advantage-card__text">
+              <p class="advantage-card__text" data-i18n="advantage3Text">
                 The country needs skilled and educated people — international
                 graduates are encouraged to stay, gain work experience, and even
                 build long-term careers through open post-study work and
@@ -140,8 +171,10 @@
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/nature.svg" alt="Nature" />
               </div>
-              <h3 class="advantage-card__title">Open and friendly culture</h3>
-              <p class="advantage-card__text">
+              <h3 class="advantage-card__title" data-i18n="advantage4Title">
+                Open and friendly culture
+              </h3>
+              <p class="advantage-card__text" data-i18n="advantage4Text">
                 Kiwis are known for their kindness, inclusiveness, and respect
                 for diversity. Students feel genuinely welcomed and quickly
                 become part of the community.
@@ -151,8 +184,10 @@
               <div class="advantage-card__icon">
                 <img src="./assets/img/icons/nature.svg" alt="Nature" />
               </div>
-              <h3 class="advantage-card__title">Quality of life</h3>
-              <p class="advantage-card__text">
+              <h3 class="advantage-card__title" data-i18n="advantage5Title">
+                Quality of life
+              </h3>
+              <p class="advantage-card__text" data-i18n="advantage5Text">
                 Clean nature, fresh air, balanced lifestyle, and excellent
                 healthcare make New Zealand one of the best places in the world
                 to live, study, and grow.
@@ -257,6 +292,67 @@
         </div>
       </section> -->
 
+      <!-- Services Section -->
+      <section class="services">
+        <div class="container">
+          <div class="services__header">
+            <h2 class="services__title" data-i18n="servicesTitle">
+              Our Services
+            </h2>
+          </div>
+          <div class="services__grid">
+            <div class="service-card">
+              <div class="service-card__icon">
+                <img src="./assets/img/icons/career.svg" alt="Career" />
+              </div>
+              <p class="service-card__text" data-i18n="service1">
+                Career counselling and guidance with the career path
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">
+                <img src="./assets/img/icons/education.svg" alt="Education" />
+              </div>
+              <p class="service-card__text" data-i18n="service2">
+                Evaluation and educational consulting services
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">
+                <img src="./assets/img/icons/education.svg" alt="Education" />
+              </div>
+              <p class="service-card__text" data-i18n="service3">
+                Schools, Colleges and Universities selection services
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">
+                <img src="./assets/img/icons/safety.svg" alt="Safety" />
+              </div>
+              <p class="service-card__text" data-i18n="service4">
+                Assist students in securing and processing admission
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">
+                <img src="./assets/img/icons/career.svg" alt="Career" />
+              </div>
+              <p class="service-card__text" data-i18n="service5">
+                Assist students in securing scholarships
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">
+                <img src="./assets/img/icons/safety.svg" alt="Safety" />
+              </div>
+              <p class="service-card__text" data-i18n="service6">
+                Assist students with support documents and letters
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact Section -->
       <section class="contact">
         <div class="contact__image">
@@ -281,10 +377,10 @@
         </div>
         <div class="contact__form-wrapper">
           <div class="contact__form-content">
-            <h2 class="contact__title">
+            <h2 class="contact__title" data-i18n="contactTitle">
               Ready to start studying in New Zealand?
             </h2>
-            <p class="contact__subtitle">
+            <p class="contact__subtitle" data-i18n="contactSubtitle">
               Submit your application, and our consultant will contact you
               within 24 hours.
             </p>
@@ -306,6 +402,7 @@
                 type="text"
                 id="name"
                 name="name"
+                data-i18n="formName"
                 placeholder="Name"
                 class="form-input"
                 required
@@ -317,6 +414,7 @@
                 type="email"
                 id="email"
                 name="email"
+                data-i18n="formEmail"
                 placeholder="Email"
                 class="form-input"
                 required
@@ -327,6 +425,7 @@
                 type="tel"
                 id="phone"
                 name="phone"
+                data-i18n="formPhone"
                 placeholder="Phone"
                 class="form-input"
                 pattern="^[+0-9 ()-]{7,20}$"
@@ -338,24 +437,29 @@
                 id="country"
                 class="form-input form-select"
               >
-                <option>Country</option>
+                <option data-i18n="formCountry">Country</option>
               </select>
               <select
                 name="program"
                 id="program"
                 class="form-input form-select"
               >
-                <option>Interested program</option>
+                <option data-i18n="formProgram">Interested program</option>
               </select>
               <textarea
                 id="message"
                 name="message"
+                data-i18n="formMessage"
                 placeholder="Message"
                 class="form-input form-textarea"
                 rows="10"
                 maxlength="2000"
               ></textarea>
-              <button type="submit" class="btn btn--white btn--large">
+              <button
+                type="submit"
+                class="btn btn--white btn--large"
+                data-i18n="formSubmit"
+              >
                 Submit application
               </button>
             </form>
@@ -366,7 +470,7 @@
       <!-- Footer -->
       <footer class="footer">
         <div class="container">
-          <p class="footer__text">
+          <p class="footer__text" data-i18n="footerText">
             Official representative of New Zealand universities and colleges.
           </p>
         </div>
