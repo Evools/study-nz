@@ -36,17 +36,12 @@ const translations = {
     // Services
     servicesTitle: "Our Services",
     service1: "Career counselling and guidance with the career path",
-    service2: "Evaluation and educational consulting services",
     service3: "Schools, Colleges and Universities selection services",
     service4: "Assist students in securing and processing admission",
     service5: "Assist students in securing scholarships",
     service6: "Assist students with support documents and letters",
-    service7: "Translation services",
     service8: "Visa support services",
     service9: "Travel support",
-    service10: "Airport meet and greet",
-    service11: "Guardianship services",
-    service12: "Support services for students in New Zealand",
 
     // Contact
     contactTitle: "Ready to start studying in New Zealand?",
@@ -98,17 +93,12 @@ const translations = {
     // Services
     servicesTitle: "Наши услуги",
     service1: "Профориентация и выбор будущей профессии",
-    service2: "Выстраивание образовательной траектории",
     service3: "Выбор учебной программы и учебного заведения",
     service4: "Подготовка к поступлению",
     service5: "Зачисление в учебное заведение",
     service6: "Помощь в получение стипендий",
-    service7: "Помощь в подготовке необходимых писем и документов",
     service8: "Визовая поддержка",
     service9: "Авиабилеты",
-    service10: "Встречи в аэропорту",
-    service11: "Guardianship/опекунство",
-    service12: "Поддержка на месте, в Новой Зеландии",
 
     // Contact
     contactTitle: "Готовы начать обучение в Новой Зеландии?",
